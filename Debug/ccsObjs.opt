@@ -1,0 +1,17 @@
+"./main.o"
+"./ti_msp_dl_config.o"
+"./startup_mspm0g350x_ticlang.o"
+"./App/Step_Motor_Turn_Angle.o"
+"./HardWare/Delay.o"
+"./HardWare/InputCapture.o"
+"./HardWare/Interrupt.o"
+"./HardWare/PID.o"
+"./HardWare/PWM.o"
+"./HardWare/Qmath.o"
+"./HardWare/Usart.o"
+"./Middle/Step_Motor.o"
+"./Middle/oled.o"
+"./Test/Step_Motor_Test.o"
+-l"./device_linker.cmd"
+-ldevice.cmd.genlibs
+-llibc.a

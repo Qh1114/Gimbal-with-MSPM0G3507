@@ -14,7 +14,7 @@ void Step_Motor_PWM_Measure_Test(void)
     StepMotor_Up_Start();
     StepMotor_Down_Start();
     StepMotor_Up_Set_Speed(360.0f);
-    StepMotor_Down_Set_Speed(360.0f);
+    //StepMotor_Down_Set_Speed(360.0f);
     Delay_ms(200);
     uint32_t Pulse_Width_Max_up = Get_PWM_Pulse_Width_Up();
     uint32_t Pulse_Width_Min_up = Get_PWM_Pulse_Width_Up();
@@ -79,7 +79,7 @@ static float Buffer_1[5], Buffer_2[5];
 static void Uart0_Send1(void)
 {
     PERIODIC(50)
-    Uart0_Printf("%f, %f , %d, %f, %d\n",SP, StepMotor_Angle_Up_Get(), Get_PWM_Pulse_Width_Up(), StepMotor_Angle_Down_Get(), Get_PWM_Pulse_Width_Down());
+    Uart0_Printf("%f, %f , %d, %f, %d,%f,%f\n",SP, StepMotor_Angle_Up_Get(), Get_PWM_Pulse_Width_Up(), StepMotor_Angle_Down_Get(), Get_PWM_Pulse_Width_Down(), speed_up, speed_down);
 }
 void Step_Turn_Angle_Test(void)
 {

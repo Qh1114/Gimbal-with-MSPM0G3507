@@ -85,10 +85,9 @@ CAPTURE1.captMode                           = "COMBINED";
 CAPTURE1.interrupts                         = ["CC1_DN","ZERO"];
 CAPTURE1.timerClkPrescale                   = 2;
 CAPTURE1.timerPeriod                        = "3.2768ms";
-CAPTURE1.captFilter                         = true;
-CAPTURE1.filteringMode                      = "VOTING";
-CAPTURE1.filterPeriod                       = "PER_8";
 CAPTURE1.$name                              = "CAPTURE_Up";
+CAPTURE1.captFilter                         = true;
+CAPTURE1.filterPeriod                       = "PER_8";
 CAPTURE1.peripheral.$assign                 = "TIMG8";
 CAPTURE1.peripheral.ccp0Pin.$assign         = "PA1";
 CAPTURE1.ccp0PinConfig.hideOutputInversion  = scripting.forceWrite(false);
@@ -100,10 +99,9 @@ CAPTURE2.captMode                           = "COMBINED";
 CAPTURE2.interrupts                         = ["CC1_DN","ZERO"];
 CAPTURE2.timerPeriod                        = "3.2768ms";
 CAPTURE2.timerClkPrescale                   = 2;
-CAPTURE2.captFilter                         = true;
-CAPTURE2.filteringMode                      = "VOTING";
-CAPTURE2.filterPeriod                       = "PER_8";
 CAPTURE2.$name                              = "CAPTURE_Down";
+CAPTURE2.captFilter                         = true;
+CAPTURE2.filterPeriod                       = "PER_8";
 CAPTURE2.peripheral.$assign                 = "TIMG0";
 CAPTURE2.peripheral.ccp0Pin.$assign         = "PA12";
 CAPTURE2.ccp0PinConfig.hideOutputInversion  = scripting.forceWrite(false);
@@ -113,19 +111,19 @@ CAPTURE2.ccp0PinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric5
 
 GPIO1.$name                         = "DIR_UP";
 GPIO1.associatedPins[0].$name       = "PIN_0";
-GPIO1.associatedPins[0].pin.$assign = "PA14";
+GPIO1.associatedPins[0].pin.$assign = "PA24";
 
 GPIO2.$name                         = "EN_UP";
 GPIO2.associatedPins[0].$name       = "PIN_1";
-GPIO2.associatedPins[0].pin.$assign = "PA17";
+GPIO2.associatedPins[0].pin.$assign = "PB24";
 
 GPIO3.$name                         = "EN_DOWN";
 GPIO3.associatedPins[0].$name       = "PIN_2";
-GPIO3.associatedPins[0].pin.$assign = "PB24";
+GPIO3.associatedPins[0].pin.$assign = "PA17";
 
 GPIO4.$name                         = "DIR_DOWN";
 GPIO4.associatedPins[0].$name       = "PIN_3";
-GPIO4.associatedPins[0].pin.$assign = "PA24";
+GPIO4.associatedPins[0].pin.$assign = "PA14";
 
 GPIO5.$name                         = "LED";
 GPIO5.associatedPins[0].$name       = "PIN_4";
@@ -250,8 +248,8 @@ SYSTICK.systickEnable     = true;
 TIMER1.timerMode          = "PERIODIC";
 TIMER1.interrupts         = ["ZERO"];
 TIMER1.$name              = "Timer_Gimbal";
-TIMER1.timerPeriod        = "2ms";
 TIMER1.timerClkPrescale   = 5;
+TIMER1.timerPeriod        = "2ms";
 TIMER1.peripheral.$assign = "TIMA0";
 
 UART1.$name                    = "UART_0";

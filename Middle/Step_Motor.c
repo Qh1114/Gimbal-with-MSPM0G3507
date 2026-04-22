@@ -18,7 +18,7 @@
 volatile float angle_down, angle_up ,angle_down_1, angle_up_1 = 0.0f;
 volatile static _iq14 q_Min_Pulse_up =_IQ14(Min_Pulse_up), q_Angle_Pulse_up =_IQ14(Angle_Pulse_up), q_Min_Pulse_down =_IQ14(Min_Pulse_down), q_Angle_Pulse_down =_IQ14(Angle_Pulse_down);
 volatile static _iq14 q_360 = _IQ14(360), q_Now_Pulse_up = 0 , q_Angle_up = 0, q_Now_Pulse_down = 0 , q_Angle_down = 0;
-volatile static float a = 0.2;
+volatile static float a = 0.1;
 volatile static uint8_t up_state = 0 , down_state = 0;
 
 static float WrapAngle180(float angle)

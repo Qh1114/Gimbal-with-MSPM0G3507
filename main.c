@@ -75,6 +75,8 @@ int main(void)
     // {
     //     Delay_ms(1000);
     // }
+    //Step_Motor_PWM_Measure_Test();
+   // Step_Turn_Angle_Test();
     Uart_Init();
     InputCapture_Init();
     Step_Angle_Turn_Init();
@@ -91,16 +93,16 @@ int main(void)
         {
             float angle_1 = StepMotor_Angle_Up_Get_1();
             float angle_2 = StepMotor_Angle_Down_Get_1();
-            up_angle = angle_1 - Buffer[1];
-            down_angle = angle_2- Buffer[0];
+            up_angle = angle_1 + Buffer[1];
+            down_angle = angle_2+ Buffer[0];
             while(up_angle >= 180.0f) up_angle -= 360.0f;
             while(up_angle < -180.0f) up_angle += 360.0f;
             while(down_angle >= 180.0f) down_angle -= 360.0f;
             while(down_angle < -180.0f) down_angle += 360.0f;
             Step_Up_Angle_Turn_To(up_angle);
             Step_Down_Angle_Turn_To(down_angle);
-            Uart_K230_Printf("angle_up_now:%f , angle_down_now:%f, goal_up_angle:%f, goal_down_angle:%f,Buffer:%f,%f\n", StepMotor_Angle_Up_Get(), StepMotor_Angle_Down_Get(), up_angle, down_angle, Buffer[0], Buffer[1]);
-        }Uart0_Send1();
+           // Uart_K230_Printf("angle_up_now:%f , angle_down_now:%f, goal_up_angle:%f, goal_down_angle:%f,Buffer:%f,%f\n", StepMotor_Angle_Up_Get(), StepMotor_Angle_Down_Get(), up_angle, down_angle, Buffer[0], Buffer[1]);
+        }//Uart0_Send1();
     }
         
     

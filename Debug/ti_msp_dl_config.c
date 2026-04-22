@@ -220,20 +220,20 @@ SYSCONFIG_WEAK void SYSCFG_DL_GPIO_init(void)
     DL_GPIO_initDigitalOutput(OLED_DC_IOMUX);
 
     DL_GPIO_clearPins(GPIOA, DIR_UP_PIN_0_PIN |
-		EN_UP_PIN_1_PIN |
+		EN_DOWN_PIN_2_PIN |
 		DIR_DOWN_PIN_3_PIN |
 		BUTTON_1_PIN_11_PIN |
 		BUTTON_3_PIN_13_PIN |
 		BUTTON_PIN_15_PIN);
     DL_GPIO_setPins(GPIOA, LED_1_PIN_8_PIN);
     DL_GPIO_enableOutput(GPIOA, DIR_UP_PIN_0_PIN |
-		EN_UP_PIN_1_PIN |
+		EN_DOWN_PIN_2_PIN |
 		DIR_DOWN_PIN_3_PIN |
 		LED_1_PIN_8_PIN |
 		BUTTON_1_PIN_11_PIN |
 		BUTTON_3_PIN_13_PIN |
 		BUTTON_PIN_15_PIN);
-    DL_GPIO_clearPins(GPIOB, EN_DOWN_PIN_2_PIN |
+    DL_GPIO_clearPins(GPIOB, EN_UP_PIN_1_PIN |
 		LED_PIN_4_PIN |
 		BUTTON_2_PIN_12_PIN |
 		BUTTON_4_PIN_14_PIN |
@@ -242,7 +242,7 @@ SYSCONFIG_WEAK void SYSCFG_DL_GPIO_init(void)
 		OLED_DC_PIN);
     DL_GPIO_setPins(GPIOB, LED_2_PIN_9_PIN |
 		LED_3_PIN_10_PIN);
-    DL_GPIO_enableOutput(GPIOB, EN_DOWN_PIN_2_PIN |
+    DL_GPIO_enableOutput(GPIOB, EN_UP_PIN_1_PIN |
 		LED_PIN_4_PIN |
 		LED_2_PIN_9_PIN |
 		LED_3_PIN_10_PIN |
@@ -534,7 +534,7 @@ SYSCONFIG_WEAK void SYSCFG_DL_CAPTURE_Up_init(void) {
     DL_TimerG_initCaptureCombinedMode(CAPTURE_Up_INST,
         (DL_TimerG_CaptureCombinedConfig *) &gCAPTURE_UpCaptureConfig);
     DL_Timer_setCaptureCompareInputFilter(CAPTURE_Up_INST,
-        DL_TIMER_CC_INPUT_FILT_CPV_VOTING, DL_TIMER_CC_INPUT_FILT_FP_PER_8,
+        DL_TIMER_CC_INPUT_FILT_CPV_CONSEC_PER, DL_TIMER_CC_INPUT_FILT_FP_PER_8,
         DL_TIMER_CC_0_INDEX);
     DL_Timer_enableCaptureCompareInputFilter(CAPTURE_Up_INST,
         DL_TIMER_CC_0_INDEX);
@@ -576,7 +576,7 @@ SYSCONFIG_WEAK void SYSCFG_DL_CAPTURE_Down_init(void) {
     DL_TimerG_initCaptureCombinedMode(CAPTURE_Down_INST,
         (DL_TimerG_CaptureCombinedConfig *) &gCAPTURE_DownCaptureConfig);
     DL_Timer_setCaptureCompareInputFilter(CAPTURE_Down_INST,
-        DL_TIMER_CC_INPUT_FILT_CPV_VOTING, DL_TIMER_CC_INPUT_FILT_FP_PER_8,
+        DL_TIMER_CC_INPUT_FILT_CPV_CONSEC_PER, DL_TIMER_CC_INPUT_FILT_FP_PER_8,
         DL_TIMER_CC_0_INDEX);
     DL_Timer_enableCaptureCompareInputFilter(CAPTURE_Down_INST,
         DL_TIMER_CC_0_INDEX);

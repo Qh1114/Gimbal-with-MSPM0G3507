@@ -266,27 +266,27 @@ bool SYSCFG_DL_SYSCTL_SYSPLL_init(void);
 /* Port definition for Pin Group DIR_UP */
 #define DIR_UP_PORT                                                      (GPIOA)
 
-/* Defines for PIN_0: GPIOA.14 with pinCMx 36 on package pin 7 */
-#define DIR_UP_PIN_0_PIN                                        (DL_GPIO_PIN_14)
-#define DIR_UP_PIN_0_IOMUX                                       (IOMUX_PINCM36)
+/* Defines for PIN_0: GPIOA.24 with pinCMx 54 on package pin 25 */
+#define DIR_UP_PIN_0_PIN                                        (DL_GPIO_PIN_24)
+#define DIR_UP_PIN_0_IOMUX                                       (IOMUX_PINCM54)
 /* Port definition for Pin Group EN_UP */
-#define EN_UP_PORT                                                       (GPIOA)
+#define EN_UP_PORT                                                       (GPIOB)
 
-/* Defines for PIN_1: GPIOA.17 with pinCMx 39 on package pin 10 */
-#define EN_UP_PIN_1_PIN                                         (DL_GPIO_PIN_17)
-#define EN_UP_PIN_1_IOMUX                                        (IOMUX_PINCM39)
+/* Defines for PIN_1: GPIOB.24 with pinCMx 52 on package pin 23 */
+#define EN_UP_PIN_1_PIN                                         (DL_GPIO_PIN_24)
+#define EN_UP_PIN_1_IOMUX                                        (IOMUX_PINCM52)
 /* Port definition for Pin Group EN_DOWN */
-#define EN_DOWN_PORT                                                     (GPIOB)
+#define EN_DOWN_PORT                                                     (GPIOA)
 
-/* Defines for PIN_2: GPIOB.24 with pinCMx 52 on package pin 23 */
-#define EN_DOWN_PIN_2_PIN                                       (DL_GPIO_PIN_24)
-#define EN_DOWN_PIN_2_IOMUX                                      (IOMUX_PINCM52)
+/* Defines for PIN_2: GPIOA.17 with pinCMx 39 on package pin 10 */
+#define EN_DOWN_PIN_2_PIN                                       (DL_GPIO_PIN_17)
+#define EN_DOWN_PIN_2_IOMUX                                      (IOMUX_PINCM39)
 /* Port definition for Pin Group DIR_DOWN */
 #define DIR_DOWN_PORT                                                    (GPIOA)
 
-/* Defines for PIN_3: GPIOA.24 with pinCMx 54 on package pin 25 */
-#define DIR_DOWN_PIN_3_PIN                                      (DL_GPIO_PIN_24)
-#define DIR_DOWN_PIN_3_IOMUX                                     (IOMUX_PINCM54)
+/* Defines for PIN_3: GPIOA.14 with pinCMx 36 on package pin 7 */
+#define DIR_DOWN_PIN_3_PIN                                      (DL_GPIO_PIN_14)
+#define DIR_DOWN_PIN_3_IOMUX                                     (IOMUX_PINCM36)
 /* Port definition for Pin Group LED */
 #define LED_PORT                                                         (GPIOB)
 

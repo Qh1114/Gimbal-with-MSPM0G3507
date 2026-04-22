@@ -29,8 +29,8 @@ void Step_Angle_Turn_Init(void)
 
 void Step_Up_Angle_Turn_To(float goal_angle)
 {
-    if(goal_angle > up_limit) goal_angle = up_limit;
-    if(goal_angle < low_limit) goal_angle = low_limit;
+    // if(goal_angle > up_limit) goal_angle = up_limit;
+    // if(goal_angle < low_limit) goal_angle = low_limit;
     SP_up = goal_angle;
     PID_ChangeSP(&pid_turn_angle_up, goal_angle);
     // PID_Reset(&pid_turn_angle_up);

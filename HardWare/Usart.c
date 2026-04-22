@@ -383,6 +383,17 @@ void Uart0_Printf(const char* format, ...)
 
     Uart0_Send_String(tmp);
 }
+void Uart_K230_Printf(const char* format, ...)
+{
+    char tmp[128];  
+    va_list argptr;
+
+    va_start(argptr, format);
+    vsnprintf(tmp, sizeof(tmp) - 1, format, argptr);
+    va_end(argptr);
+
+    Uart_K230_Send_String(tmp);
+}
 
 
 void UART_0_INST_IRQHandler(void)

@@ -13,9 +13,9 @@ typedef enum
     ENABLE
 }StepMotor_State;
 
-#define DIR_UP(T) DL_GPIO_writePinsVal(DIR_UP_PORT, DIR_UP_PIN_0_PIN, (T >= 1) ? (!DIR_UP_PIN_0_PIN) : (DIR_UP_PIN_0_PIN))
+#define DIR_UP(T) DL_GPIO_writePinsVal(DIR_UP_PORT, DIR_UP_PIN_0_PIN, (T >= 1) ? (DIR_UP_PIN_0_PIN) : (!DIR_UP_PIN_0_PIN))
 #define EN_UP(T) DL_GPIO_writePinsVal(EN_UP_PORT, EN_UP_PIN_1_PIN, (T >= 1) ? (EN_UP_PIN_1_PIN) : (!EN_UP_PIN_1_PIN))
-#define DIR_DOWN(T) DL_GPIO_writePinsVal(DIR_DOWN_PORT, DIR_DOWN_PIN_3_PIN, (T >= 1) ? (DIR_DOWN_PIN_3_PIN) : (!DIR_DOWN_PIN_3_PIN))
+#define DIR_DOWN(T) DL_GPIO_writePinsVal(DIR_DOWN_PORT, DIR_DOWN_PIN_3_PIN, (T >= 1) ? (!DIR_DOWN_PIN_3_PIN) : (DIR_DOWN_PIN_3_PIN))
 #define EN_DOWN(T) DL_GPIO_writePinsVal(EN_DOWN_PORT, EN_DOWN_PIN_2_PIN, (T >= 1) ? (EN_DOWN_PIN_2_PIN) : (!EN_DOWN_PIN_2_PIN))
 
 void StepMotor_Up_Start(void);

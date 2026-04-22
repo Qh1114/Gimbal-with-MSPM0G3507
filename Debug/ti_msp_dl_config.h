@@ -89,29 +89,29 @@ extern "C" {
 bool SYSCFG_DL_SYSCTL_SYSPLL_init(void);
 
 
-/* Defines for PWM_Under */
-#define PWM_Under_INST                                                     TIMG7
-#define PWM_Under_INST_IRQHandler                               TIMG7_IRQHandler
-#define PWM_Under_INST_INT_IRQN                                 (TIMG7_INT_IRQn)
-#define PWM_Under_INST_CLK_FREQ                                            50000
-/* GPIO defines for channel 1 */
-#define GPIO_PWM_Under_C1_PORT                                             GPIOA
-#define GPIO_PWM_Under_C1_PIN                                     DL_GPIO_PIN_27
-#define GPIO_PWM_Under_C1_IOMUX                                  (IOMUX_PINCM60)
-#define GPIO_PWM_Under_C1_IOMUX_FUNC                 IOMUX_PINCM60_PF_TIMG7_CCP1
-#define GPIO_PWM_Under_C1_IDX                                DL_TIMER_CC_1_INDEX
-
 /* Defines for PWM_Up */
-#define PWM_Up_INST                                                        TIMG6
-#define PWM_Up_INST_IRQHandler                                  TIMG6_IRQHandler
-#define PWM_Up_INST_INT_IRQN                                    (TIMG6_INT_IRQn)
+#define PWM_Up_INST                                                        TIMG7
+#define PWM_Up_INST_IRQHandler                                  TIMG7_IRQHandler
+#define PWM_Up_INST_INT_IRQN                                    (TIMG7_INT_IRQn)
 #define PWM_Up_INST_CLK_FREQ                                               50000
 /* GPIO defines for channel 1 */
 #define GPIO_PWM_Up_C1_PORT                                                GPIOA
-#define GPIO_PWM_Up_C1_PIN                                        DL_GPIO_PIN_22
-#define GPIO_PWM_Up_C1_IOMUX                                     (IOMUX_PINCM47)
-#define GPIO_PWM_Up_C1_IOMUX_FUNC                    IOMUX_PINCM47_PF_TIMG6_CCP1
+#define GPIO_PWM_Up_C1_PIN                                        DL_GPIO_PIN_27
+#define GPIO_PWM_Up_C1_IOMUX                                     (IOMUX_PINCM60)
+#define GPIO_PWM_Up_C1_IOMUX_FUNC                    IOMUX_PINCM60_PF_TIMG7_CCP1
 #define GPIO_PWM_Up_C1_IDX                                   DL_TIMER_CC_1_INDEX
+
+/* Defines for PWM_Under */
+#define PWM_Under_INST                                                     TIMG6
+#define PWM_Under_INST_IRQHandler                               TIMG6_IRQHandler
+#define PWM_Under_INST_INT_IRQN                                 (TIMG6_INT_IRQn)
+#define PWM_Under_INST_CLK_FREQ                                            50000
+/* GPIO defines for channel 1 */
+#define GPIO_PWM_Under_C1_PORT                                             GPIOA
+#define GPIO_PWM_Under_C1_PIN                                     DL_GPIO_PIN_22
+#define GPIO_PWM_Under_C1_IOMUX                                  (IOMUX_PINCM47)
+#define GPIO_PWM_Under_C1_IOMUX_FUNC                 IOMUX_PINCM47_PF_TIMG6_CCP1
+#define GPIO_PWM_Under_C1_IDX                                DL_TIMER_CC_1_INDEX
 
 /* Defines for Buzzer */
 #define Buzzer_INST                                                       TIMG12
@@ -367,8 +367,8 @@ void SYSCFG_DL_GPIO_init(void);
 void SYSCFG_DL_SYSCTL_init(void);
 
 bool SYSCFG_DL_SYSCTL_SYSPLL_init(void);
-void SYSCFG_DL_PWM_Under_init(void);
 void SYSCFG_DL_PWM_Up_init(void);
+void SYSCFG_DL_PWM_Under_init(void);
 void SYSCFG_DL_Buzzer_init(void);
 void SYSCFG_DL_CAPTURE_Up_init(void);
 void SYSCFG_DL_CAPTURE_Down_init(void);

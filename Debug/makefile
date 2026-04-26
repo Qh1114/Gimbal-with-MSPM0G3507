@@ -13,6 +13,7 @@ ORDERED_OBJS += \
 "./main.o" \
 "./ti_msp_dl_config.o" \
 "./startup_mspm0g350x_ticlang.o" \
+"./App/Menu.o" \
 "./App/Step_Motor_Turn_Angle.o" \
 "./HardWare/Delay.o" \
 "./HardWare/InputCapture.o" \
@@ -21,8 +22,16 @@ ORDERED_OBJS += \
 "./HardWare/PWM.o" \
 "./HardWare/Qmath.o" \
 "./HardWare/Usart.o" \
+"./HardWare/W25Q128.o" \
+"./HardWare/multi_button.o" \
+"./Middle/Buzzer.o" \
+"./Middle/Key.o" \
+"./Middle/LED.o" \
 "./Middle/Step_Motor.o" \
 "./Middle/oled.o" \
+"./Test/Buzzer_Test.o" \
+"./Test/Key_Test.o" \
+"./Test/LED_Test.o" \
 "./Test/Step_Motor_Test.o" \
 $(GEN_CMDS__FLAG) \
 -Wl,-ldevice.cmd.genlibs \
@@ -147,8 +156,7 @@ all: $(OBJS) $(GEN_CMDS)
 
 # Tool invocations
 empty.out: $(OBJS) $(GEN_CMDS)
-	@echo 'Building target: "$@"'
-	@echo 'Invoking: Arm Linker'
+	@echo 'Arm Linker - building target: "$@"'
 	"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -gdwarf-3 -Wall -Wl,-m"empty.map" -Wl,-i"C:/TI/mspm0_sdk_2_10_00_04/source" -Wl,-i"C:/Users/Qh/Desktop/Gimbal" -Wl,-i"C:/Users/Qh/Desktop/Gimbal/Debug/syscfg" -Wl,-i"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="empty_linkInfo.xml" -Wl,--rom_model -o "empty.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
@@ -156,9 +164,8 @@ empty.out: $(OBJS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" "App\Step_Motor_Turn_Angle.o" "HardWare\Delay.o" "HardWare\InputCapture.o" "HardWare\Interrupt.o" "HardWare\PID.o" "HardWare\PWM.o" "HardWare\Qmath.o" "HardWare\Usart.o" "Middle\Step_Motor.o" "Middle\oled.o" "Test\Step_Motor_Test.o" 
-	-$(RM) "main.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" "App\Step_Motor_Turn_Angle.d" "HardWare\Delay.d" "HardWare\InputCapture.d" "HardWare\Interrupt.d" "HardWare\PID.d" "HardWare\PWM.d" "HardWare\Qmath.d" "HardWare\Usart.d" "Middle\Step_Motor.d" "Middle\oled.d" "Test\Step_Motor_Test.d" 
-	-@echo 'Finished clean'
+	-$(RM) "main.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" "App\Menu.o" "App\Step_Motor_Turn_Angle.o" "HardWare\Delay.o" "HardWare\InputCapture.o" "HardWare\Interrupt.o" "HardWare\PID.o" "HardWare\PWM.o" "HardWare\Qmath.o" "HardWare\Usart.o" "HardWare\W25Q128.o" "HardWare\multi_button.o" "Middle\Buzzer.o" "Middle\Key.o" "Middle\LED.o" "Middle\Step_Motor.o" "Middle\oled.o" "Test\Buzzer_Test.o" "Test\Key_Test.o" "Test\LED_Test.o" "Test\Step_Motor_Test.o" 
+	-$(RM) "main.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" "App\Menu.d" "App\Step_Motor_Turn_Angle.d" "HardWare\Delay.d" "HardWare\InputCapture.d" "HardWare\Interrupt.d" "HardWare\PID.d" "HardWare\PWM.d" "HardWare\Qmath.d" "HardWare\Usart.d" "HardWare\W25Q128.d" "HardWare\multi_button.d" "Middle\Buzzer.d" "Middle\Key.d" "Middle\LED.d" "Middle\Step_Motor.d" "Middle\oled.d" "Test\Buzzer_Test.d" "Test\Key_Test.d" "Test\LED_Test.d" "Test\Step_Motor_Test.d" 
 	-@echo ' '
 
 .PHONY: all clean dependents

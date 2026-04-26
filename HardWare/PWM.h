@@ -7,5 +7,8 @@ void PWM_Under_Set_Frequency(float Frequncy);
 void PWM_Up_Start(void);
 void PWM_Up_Stop(void);
 void PWM_Up_Set_Frequency(float Frequncy);
+void PWM_Buzzer_Start(void);
+void PWM_Buzzer_Stop(void);
+void PWM_Buzzer_Set_Frequency(float Frequncy);
 
 #endif

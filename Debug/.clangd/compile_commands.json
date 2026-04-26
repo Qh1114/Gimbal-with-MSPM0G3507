@@ -2,6 +2,11 @@
    {
       "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
       "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/App/Step_Motor_Turn_Angle.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
       "file"      : "C:/Users/Qh/Desktop/Gimbal/Debug/ti_msp_dl_config.c"
    },
    {
@@ -12,7 +17,22 @@
    {
       "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
       "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/HardWare/InputCapture.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
       "file"      : "C:/Users/Qh/Desktop/Gimbal/HardWare/Interrupt.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/HardWare/PID.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/HardWare/PWM.c"
    },
    {
       "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
@@ -27,22 +47,12 @@
    {
       "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
       "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
-      "file"      : "C:/Users/Qh/Desktop/Gimbal/HardWare/PWM.c"
-   },
-   {
-      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
-      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
       "file"      : "C:/Users/Qh/Desktop/Gimbal/Middle/Step_Motor.c"
    },
    {
       "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
       "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
-      "file"      : "C:/Users/Qh/Desktop/Gimbal/HardWare/InputCapture.c"
-   },
-   {
-      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
-      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
-      "file"      : "C:/Users/Qh/Desktop/Gimbal/main.c"
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/Middle/oled.c"
    },
    {
       "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
@@ -52,16 +62,51 @@
    {
       "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
       "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
-      "file"      : "C:/Users/Qh/Desktop/Gimbal/App/Step_Motor_Turn_Angle.c"
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/main.c"
    },
    {
       "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
       "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
-      "file"      : "C:/Users/Qh/Desktop/Gimbal/HardWare/PID.c"
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/Test/Key_Test.c"
    },
    {
       "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
       "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
-      "file"      : "C:/Users/Qh/Desktop/Gimbal/Middle/oled.c"
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/Test/LED_Test.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/Test/Buzzer_Test.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/App/Menu.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/Middle/LED.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/Middle/Buzzer.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/Middle/Key.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/HardWare/multi_button.c"
+   },
+   {
+      "directory" : "C:/Users/Qh/Desktop/Gimbal/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"C:/Users/Qh/Desktop/Gimbal/App\" -I\"C:/Users/Qh/Desktop/Gimbal\" -I\"C:/Users/Qh/Desktop/Gimbal/Debug\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"C:/Users/Qh/Desktop/Gimbal/Middle\" -I\"C:/Users/Qh/Desktop/Gimbal/HardWare\" -I\"C:/TI/mspm0_sdk_2_10_00_04/source\" -I\"C:/Users/Qh/Desktop/Gimbal/Test\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/Qh/Desktop/Gimbal/HardWare/W25Q128.c"
    }
 ]

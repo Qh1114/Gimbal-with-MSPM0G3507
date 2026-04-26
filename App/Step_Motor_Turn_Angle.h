@@ -7,7 +7,6 @@ typedef enum
     Start
 }Turn_Angle_State;
 
-extern float speed_up, speed_down;
 void Step_Angle_Turn_Init(void);
 void Step_Up_Angle_Turn_To(float goal_angle);
 void Step_Down_Angle_Turn_To(float goal_angle);

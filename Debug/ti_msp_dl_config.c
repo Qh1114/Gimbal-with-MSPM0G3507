@@ -195,23 +195,37 @@ SYSCONFIG_WEAK void SYSCFG_DL_GPIO_init(void)
 
     DL_GPIO_initDigitalOutput(DIR_DOWN_PIN_3_IOMUX);
 
-    DL_GPIO_initDigitalOutput(LED_PIN_4_IOMUX);
+    DL_GPIO_initDigitalOutput(GPIO_GRP_0_PIN_4_IOMUX);
 
-    DL_GPIO_initDigitalOutput(LED_1_PIN_8_IOMUX);
+    DL_GPIO_initDigitalOutput(FLASH_CS_FLASH_IOMUX);
 
-    DL_GPIO_initDigitalOutput(LED_2_PIN_9_IOMUX);
+    DL_GPIO_initDigitalOutput(LED_LED0_IOMUX);
 
-    DL_GPIO_initDigitalOutput(LED_3_PIN_10_IOMUX);
+    DL_GPIO_initDigitalOutput(LED_LED1_IOMUX);
 
-    DL_GPIO_initDigitalOutput(BUTTON_1_PIN_11_IOMUX);
+    DL_GPIO_initDigitalOutput(LED_LED2_IOMUX);
 
-    DL_GPIO_initDigitalOutput(BUTTON_2_PIN_12_IOMUX);
+    DL_GPIO_initDigitalOutput(LED_LED3_IOMUX);
 
-    DL_GPIO_initDigitalOutput(BUTTON_3_PIN_13_IOMUX);
+    DL_GPIO_initDigitalInputFeatures(BUTTON_Pin0_IOMUX,
+		 DL_GPIO_INVERSION_DISABLE, DL_GPIO_RESISTOR_PULL_UP,
+		 DL_GPIO_HYSTERESIS_DISABLE, DL_GPIO_WAKEUP_DISABLE);
 
-    DL_GPIO_initDigitalOutput(BUTTON_4_PIN_14_IOMUX);
+    DL_GPIO_initDigitalInputFeatures(BUTTON_PIN1_IOMUX,
+		 DL_GPIO_INVERSION_DISABLE, DL_GPIO_RESISTOR_PULL_UP,
+		 DL_GPIO_HYSTERESIS_DISABLE, DL_GPIO_WAKEUP_DISABLE);
 
-    DL_GPIO_initDigitalOutput(BUTTON_PIN_15_IOMUX);
+    DL_GPIO_initDigitalInputFeatures(BUTTON_PIN2_IOMUX,
+		 DL_GPIO_INVERSION_DISABLE, DL_GPIO_RESISTOR_PULL_UP,
+		 DL_GPIO_HYSTERESIS_DISABLE, DL_GPIO_WAKEUP_DISABLE);
+
+    DL_GPIO_initDigitalInputFeatures(BUTTON_PIN3_IOMUX,
+		 DL_GPIO_INVERSION_DISABLE, DL_GPIO_RESISTOR_PULL_UP,
+		 DL_GPIO_HYSTERESIS_DISABLE, DL_GPIO_WAKEUP_DISABLE);
+
+    DL_GPIO_initDigitalInputFeatures(BUTTON_PIN4_IOMUX,
+		 DL_GPIO_INVERSION_DISABLE, DL_GPIO_RESISTOR_PULL_UP,
+		 DL_GPIO_HYSTERESIS_DISABLE, DL_GPIO_WAKEUP_DISABLE);
 
     DL_GPIO_initDigitalOutput(OLED_CS_IOMUX);
 
@@ -222,32 +236,26 @@ SYSCONFIG_WEAK void SYSCFG_DL_GPIO_init(void)
     DL_GPIO_clearPins(GPIOA, DIR_UP_PIN_0_PIN |
 		EN_DOWN_PIN_2_PIN |
 		DIR_DOWN_PIN_3_PIN |
-		BUTTON_1_PIN_11_PIN |
-		BUTTON_3_PIN_13_PIN |
-		BUTTON_PIN_15_PIN);
-    DL_GPIO_setPins(GPIOA, LED_1_PIN_8_PIN);
+		GPIO_GRP_0_PIN_4_PIN);
+    DL_GPIO_setPins(GPIOA, FLASH_CS_FLASH_PIN |
+		LED_LED1_PIN);
     DL_GPIO_enableOutput(GPIOA, DIR_UP_PIN_0_PIN |
 		EN_DOWN_PIN_2_PIN |
 		DIR_DOWN_PIN_3_PIN |
-		LED_1_PIN_8_PIN |
-		BUTTON_1_PIN_11_PIN |
-		BUTTON_3_PIN_13_PIN |
-		BUTTON_PIN_15_PIN);
+		GPIO_GRP_0_PIN_4_PIN |
+		FLASH_CS_FLASH_PIN |
+		LED_LED1_PIN);
     DL_GPIO_clearPins(GPIOB, EN_UP_PIN_1_PIN |
-		LED_PIN_4_PIN |
-		BUTTON_2_PIN_12_PIN |
-		BUTTON_4_PIN_14_PIN |
-		OLED_CS_PIN |
+		LED_LED0_PIN |
 		OLED_RES_PIN |
 		OLED_DC_PIN);
-    DL_GPIO_setPins(GPIOB, LED_2_PIN_9_PIN |
-		LED_3_PIN_10_PIN);
+    DL_GPIO_setPins(GPIOB, LED_LED2_PIN |
+		LED_LED3_PIN |
+		OLED_CS_PIN);
     DL_GPIO_enableOutput(GPIOB, EN_UP_PIN_1_PIN |
-		LED_PIN_4_PIN |
-		LED_2_PIN_9_PIN |
-		LED_3_PIN_10_PIN |
-		BUTTON_2_PIN_12_PIN |
-		BUTTON_4_PIN_14_PIN |
+		LED_LED0_PIN |
+		LED_LED2_PIN |
+		LED_LED3_PIN |
 		OLED_CS_PIN |
 		OLED_RES_PIN |
 		OLED_DC_PIN);
@@ -469,7 +477,7 @@ static const DL_TimerG_ClockConfig gBuzzerClockConfig = {
 
 static const DL_TimerG_PWMConfig gBuzzerConfig = {
     .pwmMode = DL_TIMER_PWM_MODE_EDGE_ALIGN,
-    .period = 30000,
+    .period = 300000,
     .isTimerWithFourCC = false,
     .startTimer = DL_TIMER_STOP,
 };
@@ -490,7 +498,7 @@ SYSCONFIG_WEAK void SYSCFG_DL_Buzzer_init(void) {
 		DL_TIMERG_CAPTURE_COMPARE_0_INDEX);
 
     DL_TimerG_setCaptCompUpdateMethod(Buzzer_INST, DL_TIMER_CC_UPDATE_METHOD_IMMEDIATE, DL_TIMERG_CAPTURE_COMPARE_0_INDEX);
-    DL_TimerG_setCaptureCompareValue(Buzzer_INST, 15000, DL_TIMER_CC_0_INDEX);
+    DL_TimerG_setCaptureCompareValue(Buzzer_INST, 150000, DL_TIMER_CC_0_INDEX);
 
     DL_TimerG_enableClock(Buzzer_INST);
 
@@ -789,9 +797,9 @@ SYSCONFIG_WEAK void SYSCFG_DL_SPI1_init(void) {
     /*
      * Set the bit rate clock divider to generate the serial output clock
      *     outputBitRate = (spiInputClock) / ((1 + SCR) * 2)
-     *     100000 = (80000000)/((1 + 399) * 2)
+     *     20000000 = (80000000)/((1 + 1) * 2)
      */
-    DL_SPI_setBitRateSerialClockDivider(SPI1_INST, 399);
+    DL_SPI_setBitRateSerialClockDivider(SPI1_INST, 1);
     /* Set RX and TX FIFO threshold levels */
     DL_SPI_setFIFOThreshold(SPI1_INST, DL_SPI_RX_FIFO_LEVEL_1_2_FULL, DL_SPI_TX_FIFO_LEVEL_1_2_EMPTY);
 

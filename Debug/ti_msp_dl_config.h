@@ -287,60 +287,54 @@ bool SYSCFG_DL_SYSCTL_SYSPLL_init(void);
 /* Defines for PIN_3: GPIOA.14 with pinCMx 36 on package pin 7 */
 #define DIR_DOWN_PIN_3_PIN                                      (DL_GPIO_PIN_14)
 #define DIR_DOWN_PIN_3_IOMUX                                     (IOMUX_PINCM36)
-/* Port definition for Pin Group LED */
-#define LED_PORT                                                         (GPIOB)
+/* Port definition for Pin Group GPIO_GRP_0 */
+#define GPIO_GRP_0_PORT                                                  (GPIOA)
 
-/* Defines for PIN_4: GPIOB.22 with pinCMx 50 on package pin 21 */
-#define LED_PIN_4_PIN                                           (DL_GPIO_PIN_22)
-#define LED_PIN_4_IOMUX                                          (IOMUX_PINCM50)
-/* Port definition for Pin Group LED_1 */
-#define LED_1_PORT                                                       (GPIOA)
+/* Defines for PIN_4: GPIOA.16 with pinCMx 38 on package pin 9 */
+#define GPIO_GRP_0_PIN_4_PIN                                    (DL_GPIO_PIN_16)
+#define GPIO_GRP_0_PIN_4_IOMUX                                   (IOMUX_PINCM38)
+/* Port definition for Pin Group FLASH */
+#define FLASH_PORT                                                       (GPIOA)
 
-/* Defines for PIN_8: GPIOA.13 with pinCMx 35 on package pin 6 */
-#define LED_1_PIN_8_PIN                                         (DL_GPIO_PIN_13)
-#define LED_1_PIN_8_IOMUX                                        (IOMUX_PINCM35)
-/* Port definition for Pin Group LED_2 */
-#define LED_2_PORT                                                       (GPIOB)
-
-/* Defines for PIN_9: GPIOB.3 with pinCMx 16 on package pin 51 */
-#define LED_2_PIN_9_PIN                                          (DL_GPIO_PIN_3)
-#define LED_2_PIN_9_IOMUX                                        (IOMUX_PINCM16)
-/* Port definition for Pin Group LED_3 */
-#define LED_3_PORT                                                       (GPIOB)
-
-/* Defines for PIN_10: GPIOB.23 with pinCMx 51 on package pin 22 */
-#define LED_3_PIN_10_PIN                                        (DL_GPIO_PIN_23)
-#define LED_3_PIN_10_IOMUX                                       (IOMUX_PINCM51)
-/* Port definition for Pin Group BUTTON_1 */
-#define BUTTON_1_PORT                                                    (GPIOA)
-
-/* Defines for PIN_11: GPIOA.30 with pinCMx 5 on package pin 37 */
-#define BUTTON_1_PIN_11_PIN                                     (DL_GPIO_PIN_30)
-#define BUTTON_1_PIN_11_IOMUX                                     (IOMUX_PINCM5)
-/* Port definition for Pin Group BUTTON_2 */
-#define BUTTON_2_PORT                                                    (GPIOB)
-
-/* Defines for PIN_12: GPIOB.0 with pinCMx 12 on package pin 47 */
-#define BUTTON_2_PIN_12_PIN                                      (DL_GPIO_PIN_0)
-#define BUTTON_2_PIN_12_IOMUX                                    (IOMUX_PINCM12)
-/* Port definition for Pin Group BUTTON_3 */
-#define BUTTON_3_PORT                                                    (GPIOA)
-
-/* Defines for PIN_13: GPIOA.7 with pinCMx 14 on package pin 49 */
-#define BUTTON_3_PIN_13_PIN                                      (DL_GPIO_PIN_7)
-#define BUTTON_3_PIN_13_IOMUX                                    (IOMUX_PINCM14)
-/* Port definition for Pin Group BUTTON_4 */
-#define BUTTON_4_PORT                                                    (GPIOB)
-
-/* Defines for PIN_14: GPIOB.19 with pinCMx 45 on package pin 16 */
-#define BUTTON_4_PIN_14_PIN                                     (DL_GPIO_PIN_19)
-#define BUTTON_4_PIN_14_IOMUX                                    (IOMUX_PINCM45)
-/* Port definition for Pin Group BUTTON */
-#define BUTTON_PORT                                                      (GPIOA)
-
-/* Defines for PIN_15: GPIOA.21 with pinCMx 46 on package pin 17 */
-#define BUTTON_PIN_15_PIN                                       (DL_GPIO_PIN_21)
-#define BUTTON_PIN_15_IOMUX                                      (IOMUX_PINCM46)
+/* Defines for CS_FLASH: GPIOA.18 with pinCMx 40 on package pin 11 */
+#define FLASH_CS_FLASH_PIN                                      (DL_GPIO_PIN_18)
+#define FLASH_CS_FLASH_IOMUX                                     (IOMUX_PINCM40)
+/* Defines for LED0: GPIOB.22 with pinCMx 50 on package pin 21 */
+#define LED_LED0_PORT                                                    (GPIOB)
+#define LED_LED0_PIN                                            (DL_GPIO_PIN_22)
+#define LED_LED0_IOMUX                                           (IOMUX_PINCM50)
+/* Defines for LED1: GPIOA.13 with pinCMx 35 on package pin 6 */
+#define LED_LED1_PORT                                                    (GPIOA)
+#define LED_LED1_PIN                                            (DL_GPIO_PIN_13)
+#define LED_LED1_IOMUX                                           (IOMUX_PINCM35)
+/* Defines for LED2: GPIOB.3 with pinCMx 16 on package pin 51 */
+#define LED_LED2_PORT                                                    (GPIOB)
+#define LED_LED2_PIN                                             (DL_GPIO_PIN_3)
+#define LED_LED2_IOMUX                                           (IOMUX_PINCM16)
+/* Defines for LED3: GPIOB.23 with pinCMx 51 on package pin 22 */
+#define LED_LED3_PORT                                                    (GPIOB)
+#define LED_LED3_PIN                                            (DL_GPIO_PIN_23)
+#define LED_LED3_IOMUX                                           (IOMUX_PINCM51)
+/* Defines for Pin0: GPIOA.21 with pinCMx 46 on package pin 17 */
+#define BUTTON_Pin0_PORT                                                 (GPIOA)
+#define BUTTON_Pin0_PIN                                         (DL_GPIO_PIN_21)
+#define BUTTON_Pin0_IOMUX                                        (IOMUX_PINCM46)
+/* Defines for PIN1: GPIOB.19 with pinCMx 45 on package pin 16 */
+#define BUTTON_PIN1_PORT                                                 (GPIOB)
+#define BUTTON_PIN1_PIN                                         (DL_GPIO_PIN_19)
+#define BUTTON_PIN1_IOMUX                                        (IOMUX_PINCM45)
+/* Defines for PIN2: GPIOA.30 with pinCMx 5 on package pin 37 */
+#define BUTTON_PIN2_PORT                                                 (GPIOA)
+#define BUTTON_PIN2_PIN                                         (DL_GPIO_PIN_30)
+#define BUTTON_PIN2_IOMUX                                         (IOMUX_PINCM5)
+/* Defines for PIN3: GPIOB.0 with pinCMx 12 on package pin 47 */
+#define BUTTON_PIN3_PORT                                                 (GPIOB)
+#define BUTTON_PIN3_PIN                                          (DL_GPIO_PIN_0)
+#define BUTTON_PIN3_IOMUX                                        (IOMUX_PINCM12)
+/* Defines for PIN4: GPIOA.7 with pinCMx 14 on package pin 49 */
+#define BUTTON_PIN4_PORT                                                 (GPIOA)
+#define BUTTON_PIN4_PIN                                          (DL_GPIO_PIN_7)
+#define BUTTON_PIN4_IOMUX                                        (IOMUX_PINCM14)
 /* Port definition for Pin Group OLED */
 #define OLED_PORT                                                        (GPIOB)
 

@@ -91,7 +91,15 @@ main.o: ../main.c ti_msp_dl_config.h \
  C:/Users/Qh/Desktop/Gimbal/App/Step_Motor_Turn_Angle.h \
  C:/Users/Qh/Desktop/Gimbal/HardWare/InputCapture.h \
  C:/Users/Qh/Desktop/Gimbal/Middle/oled.h \
- C:/Users/Qh/Desktop/Gimbal/Middle/bmp.h
+ C:/Users/Qh/Desktop/Gimbal/Middle/bmp.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/Key.h \
+ C:/Users/Qh/Desktop/Gimbal/Test/Key_Test.h \
+ C:/Users/Qh/Desktop/Gimbal/HardWare/multi_button.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/LED.h \
+ C:/Users/Qh/Desktop/Gimbal/Test/LED_Test.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/Buzzer.h \
+ C:/Users/Qh/Desktop/Gimbal/Test/Buzzer_Test.h \
+ C:/Users/Qh/Desktop/Gimbal/App/Menu.h
 ti_msp_dl_config.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/DeviceFamily.h:
@@ -184,3 +192,11 @@ C:/Users/Qh/Desktop/Gimbal/App/Step_Motor_Turn_Angle.h:
 C:/Users/Qh/Desktop/Gimbal/HardWare/InputCapture.h:
 C:/Users/Qh/Desktop/Gimbal/Middle/oled.h:
 C:/Users/Qh/Desktop/Gimbal/Middle/bmp.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/Key.h:
+C:/Users/Qh/Desktop/Gimbal/Test/Key_Test.h:
+C:/Users/Qh/Desktop/Gimbal/HardWare/multi_button.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/LED.h:
+C:/Users/Qh/Desktop/Gimbal/Test/LED_Test.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/Buzzer.h:
+C:/Users/Qh/Desktop/Gimbal/Test/Buzzer_Test.h:
+C:/Users/Qh/Desktop/Gimbal/App/Menu.h:

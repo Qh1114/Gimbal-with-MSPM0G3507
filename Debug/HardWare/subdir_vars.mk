@@ -12,7 +12,9 @@ C_SRCS += \
 ../HardWare/PID.c \
 ../HardWare/PWM.c \
 ../HardWare/Qmath.c \
-../HardWare/Usart.c 
+../HardWare/Usart.c \
+../HardWare/W25Q128.c \
+../HardWare/multi_button.c 
 
 C_DEPS += \
 ./HardWare/Delay.d \
@@ -21,7 +23,9 @@ C_DEPS += \
 ./HardWare/PID.d \
 ./HardWare/PWM.d \
 ./HardWare/Qmath.d \
-./HardWare/Usart.d 
+./HardWare/Usart.d \
+./HardWare/W25Q128.d \
+./HardWare/multi_button.d 
 
 OBJS += \
 ./HardWare/Delay.o \
@@ -30,7 +34,9 @@ OBJS += \
 ./HardWare/PID.o \
 ./HardWare/PWM.o \
 ./HardWare/Qmath.o \
-./HardWare/Usart.o 
+./HardWare/Usart.o \
+./HardWare/W25Q128.o \
+./HardWare/multi_button.o 
 
 OBJS__QUOTED += \
 "HardWare\Delay.o" \
@@ -39,7 +45,9 @@ OBJS__QUOTED += \
 "HardWare\PID.o" \
 "HardWare\PWM.o" \
 "HardWare\Qmath.o" \
-"HardWare\Usart.o" 
+"HardWare\Usart.o" \
+"HardWare\W25Q128.o" \
+"HardWare\multi_button.o" 
 
 C_DEPS__QUOTED += \
 "HardWare\Delay.d" \
@@ -48,7 +56,9 @@ C_DEPS__QUOTED += \
 "HardWare\PID.d" \
 "HardWare\PWM.d" \
 "HardWare\Qmath.d" \
-"HardWare\Usart.d" 
+"HardWare\Usart.d" \
+"HardWare\W25Q128.d" \
+"HardWare\multi_button.d" 
 
 C_SRCS__QUOTED += \
 "../HardWare/Delay.c" \
@@ -57,6 +67,8 @@ C_SRCS__QUOTED += \
 "../HardWare/PID.c" \
 "../HardWare/PWM.c" \
 "../HardWare/Qmath.c" \
-"../HardWare/Usart.c" 
+"../HardWare/Usart.c" \
+"../HardWare/W25Q128.c" \
+"../HardWare/multi_button.c" 
 
 

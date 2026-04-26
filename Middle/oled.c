@@ -3,34 +3,6 @@
 #include "oledfont.h"  	 
 #include "Delay.h"
 
-/*
- * Optional SPI compatibility override for OLED modules.
- *
- * Use this when SysConfig SPI frame format is not accepted by the panel.
- * If SysConfig is already configured correctly, this function can stay unused.
- */
-static void OLED_SPI_CompatInit(void)
-{
-	static const DL_SPI_Config oledSpiConfig = {
-		.mode        = DL_SPI_MODE_CONTROLLER,
-		.frameFormat = DL_SPI_FRAME_FORMAT_MOTO3_POL0_PHA0,
-		.parity      = DL_SPI_PARITY_NONE,
-		.dataSize    = DL_SPI_DATA_SIZE_8,
-		.bitOrder    = DL_SPI_BIT_ORDER_MSB_FIRST,
-	};
-
-	static const DL_SPI_ClockConfig oledSpiClockConfig = {
-		.clockSel    = DL_SPI_CLOCK_BUSCLK,
-		.divideRatio = DL_SPI_CLOCK_DIVIDE_RATIO_1
-	};
-
-	DL_SPI_disable(SPI1_INST);
-	DL_SPI_setClockConfig(SPI1_INST, (DL_SPI_ClockConfig *) &oledSpiClockConfig);
-	DL_SPI_init(SPI1_INST, (DL_SPI_Config *) &oledSpiConfig);
-	DL_SPI_setBitRateSerialClockDivider(SPI1_INST, 399);
-	DL_SPI_setFIFOThreshold(SPI1_INST, DL_SPI_RX_FIFO_LEVEL_1_2_FULL, DL_SPI_TX_FIFO_LEVEL_1_2_EMPTY);
-	DL_SPI_enable(SPI1_INST);
-}
 
 static void OLED_SPI_WriteByte(u8 dat)
 {
@@ -385,10 +357,6 @@ void OLED_ShowPicture(u8 x,u8 y,u8 sizex,u8 sizey,u8 BMP[],u8 mode)
 // Initialize SSD1306-compatible OLED panel.
 void OLED_Init(void)
 {
-	// If SysConfig SPI frame format is already correct, keep this disabled.
-	// Enable this only when panel compatibility requires runtime override.
-	// OLED_SPI_CompatInit();
-
 	OLED_CS_Set();
 	OLED_DC_Set();
 	OLED_RES_Set();

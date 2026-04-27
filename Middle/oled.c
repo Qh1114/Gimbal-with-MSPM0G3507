@@ -2,17 +2,6 @@
 #include "stdlib.h"
 #include "oledfont.h"  	 
 #include "Delay.h"
-
-
-static void OLED_SPI_WriteByte(u8 dat)
-{
-	while (DL_SPI_isTXFIFOFull(SPI1_INST)) {
-	}
-	DL_SPI_transmitData8(SPI1_INST, dat);
-	while (DL_SPI_isBusy(SPI1_INST)) {
-	}
-}
-
 u8 OLED_GRAM[144][8];
 
 // Display normal / inverse mode.
@@ -49,11 +38,16 @@ void OLED_WR_Byte(u8 dat,u8 cmd)
 	  OLED_DC_Set();
 	else 
 	  OLED_DC_Clr();		  
-	Delay_us(1); // DC setup time
 	OLED_CS_Clr();
-	OLED_SPI_WriteByte(dat);
+	//发送数据
+    DL_SPI_transmitData8(SPI1_INST, dat);
+    //等待SPI总线空闲
+    while(DL_SPI_isBusy(SPI1_INST));
+	DL_SPI_receiveData8(SPI1_INST);
+        //等待SPI总线空闲
+    while(DL_SPI_isBusy(SPI1_INST));
+
 	OLED_CS_Set();
-	Delay_us(1); // CS hold time
 	OLED_DC_Set();   	  
 }
 
@@ -97,7 +91,7 @@ void OLED_Clear(void)
 			 OLED_GRAM[n][i]=0;
 			}
   }
-	OLED_Refresh();
+	//OLED_Refresh();
 }
 
 // Draw a pixel: t=1 set, t=0 clear.
@@ -213,11 +207,11 @@ void OLED_ShowChar(u8 x,u8 y,u8 chr,u8 size1,u8 mode)
 
 
 // Draw an ASCII string.
-void OLED_ShowString(u8 x,u8 y,u8 *chr,u8 size1,u8 mode)
+void OLED_ShowString(u8 x,u8 y,char *chr,u8 size1,u8 mode)
 {
 	while((*chr>=' ')&&(*chr<='~'))
 	{
-		OLED_ShowChar(x,y,*chr,size1,mode);
+		OLED_ShowChar(x,y,(uint8_t)*chr,size1,mode);
 		if(size1==8)x+=6;
 		else x+=size1/2;
 		chr++;
@@ -355,17 +349,11 @@ void OLED_ShowPicture(u8 x,u8 y,u8 sizex,u8 sizey,u8 BMP[],u8 mode)
 	 }
 }
 // Initialize SSD1306-compatible OLED panel.
-void OLED_Init(void)
+void  OLED_Init(void)
 {
-	OLED_CS_Set();
-	OLED_DC_Set();
-	OLED_RES_Set();
-	Delay_ms(20);
-
 	OLED_RES_Clr();
-	Delay_ms(20);
+	Delay_ms(200);
 	OLED_RES_Set();
-	Delay_ms(100);
 	
 	OLED_WR_Byte(0xAE,OLED_CMD);
 	OLED_WR_Byte(0x00,OLED_CMD);

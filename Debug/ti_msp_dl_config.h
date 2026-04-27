@@ -287,18 +287,12 @@ bool SYSCFG_DL_SYSCTL_SYSPLL_init(void);
 /* Defines for PIN_3: GPIOA.14 with pinCMx 36 on package pin 7 */
 #define DIR_DOWN_PIN_3_PIN                                      (DL_GPIO_PIN_14)
 #define DIR_DOWN_PIN_3_IOMUX                                     (IOMUX_PINCM36)
-/* Port definition for Pin Group GPIO_GRP_0 */
-#define GPIO_GRP_0_PORT                                                  (GPIOA)
-
-/* Defines for PIN_4: GPIOA.16 with pinCMx 38 on package pin 9 */
-#define GPIO_GRP_0_PIN_4_PIN                                    (DL_GPIO_PIN_16)
-#define GPIO_GRP_0_PIN_4_IOMUX                                   (IOMUX_PINCM38)
 /* Port definition for Pin Group FLASH */
-#define FLASH_PORT                                                       (GPIOA)
+#define FLASH_PORT                                                       (GPIOB)
 
-/* Defines for CS_FLASH: GPIOA.18 with pinCMx 40 on package pin 11 */
-#define FLASH_CS_FLASH_PIN                                      (DL_GPIO_PIN_18)
-#define FLASH_CS_FLASH_IOMUX                                     (IOMUX_PINCM40)
+/* Defines for CS_FLASH: GPIOB.6 with pinCMx 23 on package pin 58 */
+#define FLASH_CS_FLASH_PIN                                       (DL_GPIO_PIN_6)
+#define FLASH_CS_FLASH_IOMUX                                     (IOMUX_PINCM23)
 /* Defines for LED0: GPIOB.22 with pinCMx 50 on package pin 21 */
 #define LED_LED0_PORT                                                    (GPIOB)
 #define LED_LED0_PIN                                            (DL_GPIO_PIN_22)

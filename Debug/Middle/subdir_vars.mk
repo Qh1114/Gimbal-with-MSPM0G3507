@@ -10,6 +10,7 @@ C_SRCS += \
 ../Middle/Key.c \
 ../Middle/LED.c \
 ../Middle/Step_Motor.c \
+../Middle/flash_use.c \
 ../Middle/oled.c 
 
 C_DEPS += \
@@ -17,6 +18,7 @@ C_DEPS += \
 ./Middle/Key.d \
 ./Middle/LED.d \
 ./Middle/Step_Motor.d \
+./Middle/flash_use.d \
 ./Middle/oled.d 
 
 OBJS += \
@@ -24,6 +26,7 @@ OBJS += \
 ./Middle/Key.o \
 ./Middle/LED.o \
 ./Middle/Step_Motor.o \
+./Middle/flash_use.o \
 ./Middle/oled.o 
 
 OBJS__QUOTED += \
@@ -31,6 +34,7 @@ OBJS__QUOTED += \
 "Middle\Key.o" \
 "Middle\LED.o" \
 "Middle\Step_Motor.o" \
+"Middle\flash_use.o" \
 "Middle\oled.o" 
 
 C_DEPS__QUOTED += \
@@ -38,6 +42,7 @@ C_DEPS__QUOTED += \
 "Middle\Key.d" \
 "Middle\LED.d" \
 "Middle\Step_Motor.d" \
+"Middle\flash_use.d" \
 "Middle\oled.d" 
 
 C_SRCS__QUOTED += \
@@ -45,6 +50,7 @@ C_SRCS__QUOTED += \
 "../Middle/Key.c" \
 "../Middle/LED.c" \
 "../Middle/Step_Motor.c" \
+"../Middle/flash_use.c" \
 "../Middle/oled.c" 
 
 

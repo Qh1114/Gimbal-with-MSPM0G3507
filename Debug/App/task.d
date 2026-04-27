@@ -1,6 +1,6 @@
 # FIXED
 
-HardWare/W25Q128.o: ../HardWare/W25Q128.c ../HardWare/W25Q128.h \
+App/task.o: ../App/task.c ../App/task.h \
  ti_msp_dl_config.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/DeviceFamily.h \
@@ -83,8 +83,14 @@ HardWare/W25Q128.o: ../HardWare/W25Q128.c ../HardWare/W25Q128.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_vref.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_wwdt.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_interrupt.h \
- C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h
-../HardWare/W25Q128.h:
+ C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h \
+ C:/Users/Qh/Desktop/Gimbal/HardWare/Usart.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/Buzzer.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/LED.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/Step_Motor.h \
+ C:/Users/Qh/Desktop/Gimbal/HardWare/Delay.h \
+ ../App/Step_Motor_Turn_Angle.h
+../App/task.h:
 ti_msp_dl_config.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/DeviceFamily.h:
@@ -168,3 +174,9 @@ C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_vref.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_wwdt.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_interrupt.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h:
+C:/Users/Qh/Desktop/Gimbal/HardWare/Usart.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/Buzzer.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/LED.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/Step_Motor.h:
+C:/Users/Qh/Desktop/Gimbal/HardWare/Delay.h:
+../App/Step_Motor_Turn_Angle.h:

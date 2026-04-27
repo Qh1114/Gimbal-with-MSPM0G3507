@@ -16,20 +16,28 @@
 #include "Buzzer.h"
 #include "Buzzer_Test.h"
 #include "Menu.h"
+#include "W25Q128_Test.h"
+#include "W25Q128.h"
+#include "task.h"
 int main(void)
  {
     SYSCFG_DL_init();
-    
     Uart_Init();
     InputCapture_Init(); 
     OLED_Init();
     Step_Angle_Turn_Init();
     StepMotor_Up_Start();
     StepMotor_Down_Start();
-
     NVIC_EnableIRQ(Timer_Gimbal_INST_INT_IRQN);
     DL_TimerG_startCounter(Timer_Gimbal_INST);
-   
+    Key_Init();
+    //W25Q128_Test3();
+    // Send_Task(1);
+    // Send_Task(2);
+    // Send_Task(3);
+    // Send_Task(4);
+    // Send_Task(5);
+
     Menu1();
     //Buzzer_Test1();
     //LED_Test1();

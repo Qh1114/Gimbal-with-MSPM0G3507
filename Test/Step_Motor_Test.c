@@ -78,7 +78,7 @@ static float SP;
 static float Buffer_1[5], Buffer_2[5];
 static void Uart0_Send1(void)
 {
-    PERIODIC(50)
+    PERIODIC_R(50)
     Uart0_Printf("%f, %f , %d, %f, %d\n",SP, StepMotor_Angle_Up_Get(), Get_PWM_Pulse_Width_Up(), StepMotor_Angle_Down_Get(), Get_PWM_Pulse_Width_Down());
 }
 void Step_Turn_Angle_Test(void)

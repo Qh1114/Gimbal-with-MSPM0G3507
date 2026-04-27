@@ -99,7 +99,10 @@ main.o: ../main.c ti_msp_dl_config.h \
  C:/Users/Qh/Desktop/Gimbal/Test/LED_Test.h \
  C:/Users/Qh/Desktop/Gimbal/Middle/Buzzer.h \
  C:/Users/Qh/Desktop/Gimbal/Test/Buzzer_Test.h \
- C:/Users/Qh/Desktop/Gimbal/App/Menu.h
+ C:/Users/Qh/Desktop/Gimbal/App/Menu.h \
+ C:/Users/Qh/Desktop/Gimbal/Test/W25Q128_Test.h \
+ C:/Users/Qh/Desktop/Gimbal/HardWare/W25Q128.h \
+ C:/Users/Qh/Desktop/Gimbal/App/task.h
 ti_msp_dl_config.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/DeviceFamily.h:
@@ -200,3 +203,6 @@ C:/Users/Qh/Desktop/Gimbal/Test/LED_Test.h:
 C:/Users/Qh/Desktop/Gimbal/Middle/Buzzer.h:
 C:/Users/Qh/Desktop/Gimbal/Test/Buzzer_Test.h:
 C:/Users/Qh/Desktop/Gimbal/App/Menu.h:
+C:/Users/Qh/Desktop/Gimbal/Test/W25Q128_Test.h:
+C:/Users/Qh/Desktop/Gimbal/HardWare/W25Q128.h:
+C:/Users/Qh/Desktop/Gimbal/App/task.h:

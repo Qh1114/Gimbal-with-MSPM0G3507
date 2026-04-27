@@ -23,7 +23,6 @@ const GPIO5         = GPIO.addInstance();
 const GPIO6         = GPIO.addInstance();
 const GPIO7         = GPIO.addInstance();
 const GPIO8         = GPIO.addInstance();
-const GPIO9         = GPIO.addInstance();
 const MATHACL       = scripting.addModule("/ti/driverlib/MATHACL");
 const PWM           = scripting.addModule("/ti/driverlib/PWM", {}, false);
 const PWM1          = PWM.addInstance();
@@ -159,7 +158,6 @@ GPIO6.associatedPins[4].pin.$assign      = "PA7";
 
 GPIO7.$name                          = "OLED";
 GPIO7.associatedPins.create(3);
-GPIO7.associatedPins[0].ioStructure  = "SD";
 GPIO7.associatedPins[0].$name        = "CS";
 GPIO7.associatedPins[0].initialValue = "SET";
 GPIO7.associatedPins[0].pin.$assign  = "PB14";
@@ -170,12 +168,10 @@ GPIO7.associatedPins[2].ioStructure  = "SD";
 GPIO7.associatedPins[2].$name        = "DC";
 GPIO7.associatedPins[2].pin.$assign  = "PB11";
 
-GPIO8.$name                   = "GPIO_GRP_0";
-GPIO8.associatedPins[0].$name = "PIN_4";
-
-GPIO9.$name                          = "FLASH";
-GPIO9.associatedPins[0].$name        = "CS_FLASH";
-GPIO9.associatedPins[0].initialValue = "SET";
+GPIO8.$name                          = "FLASH";
+GPIO8.associatedPins[0].$name        = "CS_FLASH";
+GPIO8.associatedPins[0].initialValue = "SET";
+GPIO8.associatedPins[0].pin.$assign  = "PB6";
 
 PWM1.ccIndex                            = [1];
 PWM1.enableShadowLoad                   = true;
@@ -315,8 +311,6 @@ pinFunction4.peripheral.hfxOutPin.$suggestSolution = "PA6";
 Board.peripheral.$suggestSolution                  = "DEBUGSS";
 Board.peripheral.swclkPin.$suggestSolution         = "PA20";
 Board.peripheral.swdioPin.$suggestSolution         = "PA19";
-GPIO8.associatedPins[0].pin.$suggestSolution       = "PA16";
-GPIO9.associatedPins[0].pin.$suggestSolution       = "PA18";
 PWM3.peripheral.ccp0Pin.$suggestSolution           = "PB13";
 SPI1.peripheral.$suggestSolution                   = "SPI1";
 UART1.peripheral.$suggestSolution                  = "UART0";

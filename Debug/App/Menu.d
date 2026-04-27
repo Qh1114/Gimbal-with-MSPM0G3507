@@ -84,7 +84,11 @@ App/Menu.o: ../App/Menu.c ../App/Menu.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_wwdt.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_interrupt.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h \
- C:/Users/Qh/Desktop/Gimbal/Middle/oled.h
+ C:/Users/Qh/Desktop/Gimbal/Middle/oled.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/flash_use.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/Key.h \
+ C:/Users/Qh/Desktop/Gimbal/HardWare/Delay.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/Step_Motor.h ../App/task.h
 ../App/Menu.h:
 ti_msp_dl_config.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h:
@@ -170,3 +174,8 @@ C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_wwdt.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_interrupt.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h:
 C:/Users/Qh/Desktop/Gimbal/Middle/oled.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/flash_use.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/Key.h:
+C:/Users/Qh/Desktop/Gimbal/HardWare/Delay.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/Step_Motor.h:
+../App/task.h:

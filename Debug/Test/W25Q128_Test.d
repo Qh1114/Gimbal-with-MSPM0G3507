@@ -1,6 +1,7 @@
 # FIXED
 
-HardWare/W25Q128.o: ../HardWare/W25Q128.c ../HardWare/W25Q128.h \
+Test/W25Q128_Test.o: ../Test/W25Q128_Test.c \
+ C:/Users/Qh/Desktop/Gimbal/HardWare/W25Q128.h \
  ti_msp_dl_config.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/DeviceFamily.h \
@@ -83,8 +84,13 @@ HardWare/W25Q128.o: ../HardWare/W25Q128.c ../HardWare/W25Q128.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_vref.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_wwdt.h \
  C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_interrupt.h \
- C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h
-../HardWare/W25Q128.h:
+ C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h \
+ ../Test/W25Q128_Test.h C:/Users/Qh/Desktop/Gimbal/HardWare/Usart.h \
+ C:/Users/Qh/Desktop/Gimbal/HardWare/Delay.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/Key.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/oled.h \
+ C:/Users/Qh/Desktop/Gimbal/Middle/flash_use.h
+C:/Users/Qh/Desktop/Gimbal/HardWare/W25Q128.h:
 ti_msp_dl_config.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/DeviceFamily.h:
@@ -168,3 +174,9 @@ C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_vref.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_wwdt.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_interrupt.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h:
+../Test/W25Q128_Test.h:
+C:/Users/Qh/Desktop/Gimbal/HardWare/Usart.h:
+C:/Users/Qh/Desktop/Gimbal/HardWare/Delay.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/Key.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/oled.h:
+C:/Users/Qh/Desktop/Gimbal/Middle/flash_use.h:

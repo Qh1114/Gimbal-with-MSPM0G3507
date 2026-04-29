@@ -6,7 +6,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
-
 // #define BufferSize 256          //缓冲区大小
 // #define CommandMiniSize 4       //最小命令长度
 // #define CommandStartByte 0xAA   //命令起始字节
@@ -448,7 +447,6 @@ uint8_t Uart0_ReadCommand(float* command)
         UartParser_Reset(&uart0_parser, Get_ms());
         return 0;
     }
-
     // 校验成功
     UartParser_Reset(&uart0_parser, Get_ms());
     return count;

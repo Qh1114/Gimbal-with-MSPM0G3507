@@ -6,6 +6,8 @@
 #include "Delay.h"
 #include "Step_Motor.h"
 #include "task.h"
+#include "Usart.h"
+#include "Step_Motor_Turn_Angle.h"
 static uint8_t Key = 0;
 static char buffer[16];
 
@@ -202,7 +204,7 @@ void Menu2_SelectTask(void)
 void Menu3_Task(uint8_t task_id)
 {
     OLED_Clear();
-    char Task_String[16];
+    char Task_String[30];
     if(!task_id)
     {
         sprintf(Task_String, "Executing Task %d", task_id);
@@ -213,7 +215,9 @@ void Menu3_Task(uint8_t task_id)
     OLED_ShowString(0, 0, "<-", 16, 0);
     OLED_ShowString(0, 16, Task_String, 16, 1);
     OLED_Refresh();
-
+    
+    StepMotor_Up_Start();
+    StepMotor_Down_Start();
     Gimbal_Turn_To_Goal();
     if(task_id) Send_Task(task_id);
     float Buffer[5] = {0};
@@ -222,6 +226,9 @@ void Menu3_Task(uint8_t task_id)
         Key = Key_Num_Get();
         if(Key == 3) //按下确定键返回主界面
         {
+            StepMotor_Up_Stop();
+            StepMotor_Down_Stop();
+            Step_Angle_Turn_Cmd(Stop);
             return;
         }
         uint8_t datanum = Uart0_ReadCommand(Buffer);

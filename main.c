@@ -19,6 +19,7 @@
 #include "W25Q128_Test.h"
 #include "W25Q128.h"
 #include "task.h"
+#include <stdio.h>
 int main(void)
  {
     SYSCFG_DL_init();
@@ -45,22 +46,34 @@ int main(void)
     float up_angle = 0.0f;
     float down_angle = 0.0f;
     float Buffer[5] = {0};
+    char buffer[16];
+    uint32_t count_sum = 0;
     while (1) 
     {   
-        uint8_t datanum = Uart0_ReadCommand(Buffer);
-        if(datanum == 2)
-        {
-            float angle_1 = StepMotor_Angle_Up_Get_1();
-            float angle_2 = StepMotor_Angle_Down_Get_1();
-            up_angle = angle_1 + Buffer[1];
-            down_angle = angle_2+ Buffer[0];
-            while(up_angle >= 180.0f) up_angle -= 360.0f;
-            while(up_angle < -180.0f) up_angle += 360.0f;
-            while(down_angle >= 180.0f) down_angle -= 360.0f;
-            while(down_angle < -180.0f) down_angle += 360.0f;
-            Step_Up_Angle_Turn_To(up_angle);
-            Step_Down_Angle_Turn_To(down_angle);
-        }
+        // uint8_t datanum = Uart0_ReadCommand(Buffer);
+        // if(datanum == 4)
+        // {
+        //     count_sum ++;
+        // }
+        // PERIODIC_C(100); //每100ms执行一次循环体
+        // OLED_Clear();
+        // sprintf(buffer, "count: %d", count_sum);
+        // OLED_ShowString(0, 0, buffer, 16, 1);
+        // OLED_Refresh();
+        // uint8_t datanum = Uart0_ReadCommand(Buffer);
+        // if(datanum == 2)
+        // {
+        //     float angle_1 = StepMotor_Angle_Up_Get_1();
+        //     float angle_2 = StepMotor_Angle_Down_Get_1();
+        //     up_angle = angle_1 + Buffer[1];
+        //     down_angle = angle_2+ Buffer[0];
+        //     while(up_angle >= 180.0f) up_angle -= 360.0f;
+        //     while(up_angle < -180.0f) up_angle += 360.0f;
+        //     while(down_angle >= 180.0f) down_angle -= 360.0f;
+        //     while(down_angle < -180.0f) down_angle += 360.0f;
+        //     Step_Up_Angle_Turn_To(up_angle);
+        //     Step_Down_Angle_Turn_To(down_angle);
+        // }
     }
         
     

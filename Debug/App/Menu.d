@@ -88,7 +88,9 @@ App/Menu.o: ../App/Menu.c ../App/Menu.h \
  C:/Users/Qh/Desktop/Gimbal/Middle/flash_use.h \
  C:/Users/Qh/Desktop/Gimbal/Middle/Key.h \
  C:/Users/Qh/Desktop/Gimbal/HardWare/Delay.h \
- C:/Users/Qh/Desktop/Gimbal/Middle/Step_Motor.h ../App/task.h
+ C:/Users/Qh/Desktop/Gimbal/Middle/Step_Motor.h ../App/task.h \
+ C:/Users/Qh/Desktop/Gimbal/HardWare/Usart.h \
+ ../App/Step_Motor_Turn_Angle.h
 ../App/Menu.h:
 ti_msp_dl_config.h:
 C:/TI/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h:
@@ -179,3 +181,5 @@ C:/Users/Qh/Desktop/Gimbal/Middle/Key.h:
 C:/Users/Qh/Desktop/Gimbal/HardWare/Delay.h:
 C:/Users/Qh/Desktop/Gimbal/Middle/Step_Motor.h:
 ../App/task.h:
+C:/Users/Qh/Desktop/Gimbal/HardWare/Usart.h:
+../App/Step_Motor_Turn_Angle.h:

@@ -6,6 +6,7 @@
 #include "Step_Motor.h"
 #include "Delay.h"
 #include "Step_Motor_Turn_Angle.h"
+#include "flash_use.h"
 void Transfer_Protocol(float *data, uint8_t length, char *protool)
 {
 	// 假设data为float数组的指针
